@@ -1,0 +1,50 @@
+# AutoQA local output
+reports/
+autoqa-report/
+evidence/
+
+# AutoQA local state
+.autoqa/auth/
+.autoqa/secrets/
+*.storage-state.json
+
+# Logs
+*.log
+logs/
+
+# Go
+bin/
+*.test
+coverage.out
+
+# Node / TypeScript
+node_modules/
+dist/
+build/
+playwright-report/
+test-results/
+.npm/
+.pnpm-store/
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+dist/
+build/
+*.egg-info/
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
