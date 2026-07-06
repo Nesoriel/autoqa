@@ -1,0 +1,32 @@
+target: https://example.com
+
+profile: full
+
+pages:
+  - /
+  - /login
+
+checks:
+  http: true
+  seo: true
+  browser: true
+  public_assets: true
+  security_headers: true
+
+browser:
+  collect:
+    - screenshot
+    - console_errors
+    - network_errors
+    - html_preview
+
+output:
+  dir: ./reports/example
+  markdown: true
+  json: true
+  evidence: true
+
+safety:
+  readonly: true
+  allow_form_submit: false
+  redact_secrets: true
